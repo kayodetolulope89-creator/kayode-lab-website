@@ -1,0 +1,42 @@
+KAYODE LAB — GITHUB WEBSITE UPDATE
+
+This folder contains the complete current website and update guides.
+
+1. Unzip the download on your computer.
+2. Open https://github.com/kayodetolulope89-creator/kayode-lab-website
+3. Go to the Code tab and the branch used by GitHub Pages.
+4. Select Add file > Upload files.
+5. From INSIDE this extracted folder, drag these six files and the assets folder
+   into the GitHub upload area:
+
+   index.html
+   styles.css
+   script.js
+   gallery.html
+   news.html
+   news-data.js
+   assets/ (the entire folder, preserving its name)
+
+Do not upload the ZIP or the outer kayode-lab-github-update folder.
+The HTML files must sit beside the existing index.html at the repository root.
+The pictures must remain inside assets/. Do not flatten that folder.
+
+Existing files with the same path should be replaced. Confirm index.html is
+named exactly index.html, not index-2.html or index.html.txt.
+
+6. Add commit message: Update lab members, gallery, news archive and header
+7. Click Commit changes to the Pages publishing branch.
+8. Check the repository Actions tab for completion of the Pages deployment.
+9. Open https://kayodelabs.com and hard-refresh (Mac: Command+Shift+R).
+10. Check Gallery, Older news, People, portraits and the simplified header.
+
+Keep your existing CNAME, .nojekyll, workflows and repository settings.
+Do not delete the repository contents or change GoDaddy DNS for this update.
+If GitHub proposes removing CNAME, cancel and upload only the files listed above.
+
+NEWS_GUIDE.txt and GALLERY_GUIDE.txt are instructions for you; they do not have
+to be uploaded to the website.
+
+Future news: edit news-data.js only. The homepage shows the newest four items;
+news.html shows all updates, newest first.
+Future gallery: edit gallery.html and add photographs to assets/.

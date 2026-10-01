@@ -7,8 +7,9 @@
   <meta name="description" content="Kayode Lab at James Madison University studies vector-borne disease through field epidemiology, molecular diagnostics, and pathogen genomics.">
   <title>Kayode Lab | Vector-Borne Disease Research</title>
   <link rel="preload" href="assets/mosquito-pexels.jpg" as="image" type="image/jpeg">
-  <link rel="stylesheet" href="styles.css?v=20260927-3">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261001-v5">
+  <script src="news-data.js?v=20261001-v5" defer></script>
+  <script src="script.js?v=20261001-v5" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -20,6 +21,7 @@
         <a href="#research">Research</a>
         <a href="#people">People</a>
         <a href="#news">News</a>
+        <a href="gallery.html">Gallery</a>
         <a href="https://scholar.google.com/citations?hl=en&amp;user=4zWHbgIAAAAJ" target="_blank" rel="noopener noreferrer">Publications</a>
         <a href="#contact">Contact</a>
         <a class="nav-join" href="#join">Join the lab</a>
@@ -62,30 +64,74 @@
     </section>
 
     <section class="people section-pad" id="people" aria-labelledby="people-title">
-      <div class="wrap people-grid">
+      <div class="wrap people-intro">
         <div>
           <p class="section-label">Lab members</p>
           <h2 id="people-title">Meet the Lab</h2>
-          <p>Kayode Lab is led by Dr. Tolulope A. Kayode.</p>
         </div>
         <div class="pi-detail">
           <img class="pi-photo" src="assets/tolulope-kayode.webp" alt="Dr. Tolulope A. Kayode" width="750" height="932" loading="lazy" decoding="async">
           <div>
             <h3>Tolulope A. Kayode, PhD</h3>
             <p>Principal Investigator<br>Assistant Professor of Biology<br>James Madison University</p>
-            <a class="text-link" href="https://www.jmu.edu/biology/people/current-people/faculty/faculty-kayode.shtml" target="_blank" rel="noopener noreferrer">JMU faculty profile <span aria-hidden="true">↗</span></a>
+            <div class="member-links" aria-label="Tolulope Kayode's profiles">
+              <a class="text-link" href="https://www.jmu.edu/biology/people/current-people/faculty/faculty-kayode.shtml" target="_blank" rel="noopener noreferrer">JMU faculty profile <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://www.linkedin.com/in/tolulope-kayode-phd-333b0b60" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Add future lab member profiles inside member-list. See UPDATE_GUIDE.md. -->
-      <div class="wrap member-list"></div>
+      <div class="wrap student-section">
+        <h3 class="student-heading">Student researchers</h3>
+        <div class="member-list">
+          <article class="member-card" aria-labelledby="samira-name">
+            <div class="member-overview">
+              <img class="member-photo" src="assets/samira-farooque.png" alt="Samira Farooque" width="944" height="2048" loading="lazy" decoding="async">
+              <div class="member-summary">
+                <h3 id="samira-name">Samira Farooque</h3>
+                <p class="member-role">Undergraduate researcher</p>
+                <p class="member-academic">Biology · Pre-dental<br>Sociology minor</p>
+                <p class="member-graduation">Expected graduation: <span>December 2029</span></p>
+              </div>
+            </div>
+            <p class="member-bio">Samira studies Biology at James Madison University and is pursuing pre-dental studies with a Sociology minor. She is a Centennial Scholar and a member of Tri-Beta and Relay for Life. Outside of academics, she enjoys playing sports, working out, reading, and traveling.</p>
+            <div class="member-links" aria-label="Contact Samira Farooque">
+              <a class="text-link" href="https://www.linkedin.com/in/samira-farooque-207800399" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a class="text-link member-email" href="mailto:farooqsa@dukes.jmu.edu">farooqsa@dukes.jmu.edu</a>
+            </div>
+          </article>
+          <article class="member-card" aria-labelledby="javier-name">
+            <div class="member-overview">
+              <img class="member-photo" src="assets/javier-molina.png" alt="Javier Cuahtli Molina" width="1024" height="1536" loading="lazy" decoding="async">
+              <div class="member-summary">
+                <h3 id="javier-name">Javier Cuahtli Molina</h3>
+                <p class="member-role">Undergraduate researcher</p>
+                <p class="member-academic">Biology · Neuroscience concentration<br>Pre-med</p>
+                <p class="member-graduation">Expected graduation: <span>2029</span></p>
+              </div>
+            </div>
+            <p class="member-bio">Javier hopes to pursue medicine and provide holistic care to Latino children and families. He is interested in how genetics and engineering research can improve healthcare. Outside of academics, he enjoys going to the gym, running, video editing, and volunteering with the Scholars Latino Initiative.</p>
+            <div class="member-links" aria-label="Contact Javier Cuahtli Molina">
+              <a class="text-link" href="https://www.linkedin.com/in/haviermolina" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a class="text-link member-email" href="mailto:molinajc@dukes.jmu.edu">molinajc@dukes.jmu.edu</a>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
     <section class="news section-pad" id="news" aria-labelledby="news-title">
       <div class="wrap">
         <p class="section-label">News</p>
         <h2 id="news-title">Latest from the lab</h2>
-        <div class="news-list">
+        <div class="news-list" data-news-list data-news-limit="4">
+          <article class="news-item">
+            <div class="news-meta"><time class="news-year" datetime="2026-10">October 2026</time><span>Lab members</span></div>
+            <div class="news-story">
+              <h3>Kayode Lab welcomes new student researchers</h3>
+              <p>We are pleased to welcome Samira Farooque, Javier Cuahtli Molina, and Bailey Brock to Kayode Lab at James Madison University. Their arrival marks an exciting step as we build our research team. We look forward to supporting their growth in molecular biology, diagnostics, and genomics through training, mentorship, and research.</p>
+            </div>
+          </article>
           <article class="news-item">
             <div class="news-meta"><time class="news-year" datetime="2026-08">August 2026</time><span>Lab milestone</span></div>
             <div class="news-story">
@@ -94,6 +140,7 @@
             </div>
           </article>
         </div>
+        <a class="text-link news-archive-link" href="news.html">Older news <span aria-hidden="true">→</span></a>
       </div>
     </section>
 
@@ -127,7 +174,7 @@
   </main>
 
   <footer class="site-footer" id="contact">
-    <div class="wrap footer-grid"><div><a class="footer-brand" href="#top">Kayode Lab</a><p>Department of Biology<br>James Madison University<br>Harrisonburg, Virginia</p></div><div><p class="footer-heading">Connect</p><a href="mailto:p9pw4p@jmu.edu">p9pw4p@jmu.edu</a><a href="https://www.jmu.edu/biology/people/current-people/faculty/faculty-kayode.shtml" target="_blank" rel="noopener noreferrer">JMU faculty profile</a></div><div><p class="footer-heading">Explore</p><a href="#research">Research</a><a href="#people">People</a><a href="#news">News</a><a href="https://scholar.google.com/citations?hl=en&amp;user=4zWHbgIAAAAJ" target="_blank" rel="noopener noreferrer">Publications</a></div></div>
+    <div class="wrap footer-grid"><div><a class="footer-brand" href="#top">Kayode Lab</a><p>Department of Biology<br>James Madison University<br>Harrisonburg, Virginia</p></div><div><p class="footer-heading">Connect</p><a href="mailto:p9pw4p@jmu.edu">p9pw4p@jmu.edu</a><a href="https://www.jmu.edu/biology/people/current-people/faculty/faculty-kayode.shtml" target="_blank" rel="noopener noreferrer">JMU faculty profile</a></div><div><p class="footer-heading">Explore</p><a href="#research">Research</a><a href="#people">People</a><a href="#news">News</a><a href="gallery.html">Gallery</a><a href="https://scholar.google.com/citations?hl=en&amp;user=4zWHbgIAAAAJ" target="_blank" rel="noopener noreferrer">Publications</a></div></div>
     <div class="wrap footer-bottom"><span>© 2026 Kayode Lab</span><span>Hero photo: <a href="https://www.pexels.com/photo/a-mosquito-on-a-leaf-10389982/" target="_blank" rel="noopener noreferrer">Erik Karits / Pexels</a> · Research images are illustrative.</span></div>
   </footer>
 </body>

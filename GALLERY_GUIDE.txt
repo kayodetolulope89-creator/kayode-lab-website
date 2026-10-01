@@ -1,0 +1,25 @@
+GALLERY: ADDING PHOTOS AND STORIES
+
+Gallery now has its own page at gallery.html. Header and footer links open this page.
+
+1. Put a photo in assets, using a simple filename such as first-lab-meeting.jpg.
+2. Open gallery.html. Remove the <div class="gallery-empty"> block when adding your first story.
+3. Replace <div class="gallery-grid"></div> with this template, adapting the filename, dimensions, alt text, date, title, and story:
+
+<div class="gallery-grid">
+  <figure class="gallery-figure">
+    <button class="gallery-photo-button" type="button" aria-label="Enlarge photo: our first lab meeting">
+      <img src="assets/first-lab-meeting.jpg" alt="Kayode Lab members gathered for their first lab meeting" width="1200" height="900" loading="lazy" decoding="async">
+    </button>
+    <figcaption class="gallery-story">
+      <time class="gallery-date" datetime="2026-10">October 2026</time>
+      <h2 data-photo-caption>Our first lab meeting</h2>
+      <p>Add a short story about the people, activity, or milestone pictured.</p>
+    </figcaption>
+  </figure>
+</div>
+
+For more photos, add another <figure> inside the same gallery-grid. Keep newest entries first.
+Use actual image dimensions for width and height. Thumbnail crops keep the grid tidy; clicking reveals the full photograph. Escape, Close, or clicking outside closes the enlarged view.
+
+Upload the changed gallery.html and the new photos to GitHub together. index.html only needs updating when homepage content changes.

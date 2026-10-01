@@ -1,0 +1,23 @@
+ADDING NEWS
+
+Edit news-data.js to add or change an update. Both the homepage and news.html
+read this same file. The homepage automatically shows only the four most recent
+updates. Older news opens news.html, which shows every update, newest first.
+You currently have two updates; no additional news has been invented.
+
+Each entry has four fields:
+  date: month in YYYY-MM format (for example 2026-10)
+  category: a short label such as Lab milestone or Lab members
+  title: the news headline
+  body: the paragraph of news
+
+Copy an existing entry and replace its values. Put a comma between entries.
+Keep quotation marks around each field and value. If your text needs a double
+quotation mark, write it as \" inside the value. Apostrophes need no change.
+Use YYYY-MM dates only. Entries with the same date retain their order in the file.
+
+Refresh your localhost page to review the result.
+For later news updates, upload the edited news-data.js to GitHub.
+
+Initial GitHub update: replace index.html, styles.css, script.js and gallery.html;
+add news.html and news-data.js. Retain CNAME and existing assets.
