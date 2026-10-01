@@ -145,7 +145,8 @@
   const renderPublications = (items) => {
     const list = document.querySelector('[data-publications-list]');
     const fragment = document.createDocumentFragment();
-    [...items].sort((a, b) => Number(b.year || 0) - Number(a.year || 0)).forEach(item => {
+    // Show the ten newest papers. Keep the complete list saved in the editor.
+    [...items].filter(item => externalURL(item.url)).sort((a, b) => Number(b.year || 0) - Number(a.year || 0)).slice(0, 10).forEach(item => {
       const url = externalURL(item.url);
       if (!url) return;
       const card = node('a', 'paper-card');
