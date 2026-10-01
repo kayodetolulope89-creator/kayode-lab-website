@@ -2,91 +2,101 @@
   {
     "title": "High-Altitude Plasmodium falciparum and Plasmodium vivax Reservoirs in Ethiopia Are Not Linked to Recent Travel",
     "journal": "Open Forum Infectious Diseases",
-    "journal_style": "ofid",
+    "short_journal": "Open Forum Infectious Diseases",
     "year": 2026,
     "article_type": "Article",
     "doi": "10.1093/ofid/ofag247",
     "url": "https://doi.org/10.1093/ofid/ofag247",
-    "short_journal": "Open Forum Infectious Diseases"
+    "journal_style": "ofid"
   },
   {
     "title": "First field evaluation of novel LDH- and HRP2-based rapid tests for Plasmodium vivax and Plasmodium falciparum malaria diagnosis",
     "journal": "PLOS Neglected Tropical Diseases",
-    "journal_style": "plos",
+    "short_journal": "PLOS NTD",
     "year": 2025,
     "article_type": "Research article",
     "doi": "10.1371/journal.pntd.0013307",
     "url": "https://doi.org/10.1371/journal.pntd.0013307",
-    "short_journal": "PLOS NTD"
+    "journal_style": "plos"
   },
   {
     "title": "Comparison of three rapid diagnostic tests for Plasmodium falciparum diagnosis in Ghana",
     "journal": "Malaria Journal",
-    "journal_style": "malaria",
+    "short_journal": "Malaria Journal",
     "year": 2024,
     "article_type": "Research",
     "doi": "10.1186/s12936-024-05073-z",
     "url": "https://doi.org/10.1186/s12936-024-05073-z",
-    "short_journal": "Malaria Journal"
+    "journal_style": "malaria"
   },
   {
     "title": "Emergence and spread of two SARS-CoV-2 variants of interest in Nigeria",
     "journal": "Nature Communications",
-    "journal_style": "nature",
+    "short_journal": "Nature Communications",
     "year": 2023,
     "article_type": "Article",
     "doi": "10.1038/s41467-023-36449-5",
     "url": "https://doi.org/10.1038/s41467-023-36449-5",
-    "short_journal": "Nature Communications"
+    "journal_style": "nature"
   },
   {
     "title": "Molecular profiling of the artemisinin resistance Kelch 13 gene in Plasmodium falciparum from Nigeria",
     "journal": "PLOS ONE",
-    "journal_style": "plosone",
+    "short_journal": "PLOS ONE",
     "year": 2022,
     "article_type": "Research article",
     "doi": "10.1371/journal.pone.0264548",
     "url": "https://doi.org/10.1371/journal.pone.0264548",
-    "short_journal": "PLOS ONE"
+    "journal_style": "plosone"
   },
   {
     "title": "A year of genomic surveillance reveals how the SARS-CoV-2 pandemic unfolded in Africa",
     "journal": "Science",
-    "journal_style": "science",
+    "short_journal": "Science",
     "year": 2021,
     "article_type": "Research article",
     "doi": "10.1126/science.abj4336",
     "url": "https://doi.org/10.1126/science.abj4336",
-    "short_journal": "Science"
+    "journal_style": "science"
   },
   {
     "title": "Polymorphisms in Plasmodium falciparum dihydropteroate synthetase and dihydrofolate reductase genes in Nigerian children with uncomplicated malaria using high-resolution melting technique",
     "journal": "Scientific Reports",
-    "journal_style": "reports",
+    "short_journal": "Scientific Reports",
     "year": 2021,
     "article_type": "Article",
     "doi": "10.1038/s41598-020-80017-6",
     "url": "https://doi.org/10.1038/s41598-020-80017-6",
-    "short_journal": "Scientific Reports"
+    "journal_style": "reports"
   },
   {
     "title": "Polymorphisms in Plasmodium falciparum chloroquine resistance transporter (Pfcrt) and multidrug-resistant gene 1 (Pfmdr-1) in Nigerian children 10 years post-adoption of artemisinin-based combination treatments",
     "journal": "International Journal for Parasitology",
-    "journal_style": "ijpara",
+    "short_journal": "International Journal for Parasitology",
     "year": 2021,
     "article_type": "Article",
     "doi": "10.1016/j.ijpara.2020.10.001",
     "url": "https://doi.org/10.1016/j.ijpara.2020.10.001",
-    "short_journal": "International Journal for Parasitology"
+    "journal_style": "ijpara"
   },
   {
     "title": "Genomic Analysis of Lassa Virus during an Increase in Cases in Nigeria in 2018",
     "journal": "The New England Journal of Medicine",
-    "journal_style": "nejm",
+    "short_journal": "NEJM",
     "year": 2018,
     "article_type": "Original article",
     "doi": "10.1056/NEJMoa1804498",
     "url": "https://doi.org/10.1056/NEJMoa1804498",
-    "short_journal": "NEJM"
+    "journal_style": "nejm"
+  },
+  {
+    "title": "Artificial Intelligence–Supported Automated Microscopy for Malaria Diagnosis: A Multicenter Study",
+    "journal": "Clinical Infectious Diseases",
+    "short_journal": "CID",
+    "year": 2026,
+    "article_type": "Clinical Infectious Diseases",
+    "doi": "10.1093/cid/ciag484",
+    "url": "https://doi.org/10.1093/cid/ciag484",
+    "journal_style": "cid"
   }
 ]
