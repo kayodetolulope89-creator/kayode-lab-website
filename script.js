@@ -57,3 +57,17 @@ if (galleryGrid && galleryDialog) {
   });
 }
 
+
+// Reserve the actual header height so content and menu destinations stay visible.
+const fixedHeader = document.querySelector('.site-header');
+if (fixedHeader) {
+  const updateHeaderHeight = () => {
+    document.documentElement.style.setProperty('--header-height', fixedHeader.offsetHeight + 'px');
+  };
+  updateHeaderHeight();
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(updateHeaderHeight).observe(fixedHeader);
+  } else {
+    window.addEventListener('resize', updateHeaderHeight);
+  }
+}
