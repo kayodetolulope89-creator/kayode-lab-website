@@ -159,3 +159,8 @@ h2{font-size:clamp(2.15rem,4vw,3.6rem);line-height:1.15;margin-bottom:0}
 .news-archive-link{display:inline-block;margin-top:2rem}
 .news-archive-main .news-list{margin-top:3rem}
 .news-archive-main .news-item{max-width:none}
+/* Editable content keeps the existing site layout. */
+[hidden]{display:none!important}
+.member-photo-placeholder{display:flex;align-items:center;justify-content:center;color:var(--secondary);font-size:1.6rem;font-weight:600}
+.news-story p,.member-bio,.gallery-story p{white-space:pre-line}
+.paper-masthead.neutral{font-family:Georgia,'Times New Roman',serif;font-size:1.25rem;line-height:1.2}

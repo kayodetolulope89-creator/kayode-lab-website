@@ -1,0 +1,74 @@
+KAYODE LAB — WEBSITE EDITOR SETUP
+
+The design is unchanged. Pages CMS provides the signed-in editor.
+Its configuration is .pages.yml. News, members, gallery stories, publications
+and your profile are editable forms backed by the content folder.
+
+ONE-TIME GITHUB UPLOAD
+1. Unzip this package.
+2. Open your kayode-lab-website repository on GitHub and choose the main branch.
+3. Add file > Upload files. Upload these six files and both folders from INSIDE
+   this package:
+   index.html
+   gallery.html
+   news.html
+   styles.css
+   script.js
+   cms-content.js
+   content/ (entire folder)
+   assets/ (entire folder)
+4. Commit with message: Add website content editor
+5. Add the editor configuration in a second commit:
+   - Open CMS_CONFIG.txt from this package and copy its entire contents.
+   - In the repository, choose Add file > Create new file.
+   - Name the file exactly .pages.yml (including the leading dot).
+   - Paste the configuration into the file and commit the change.
+   The package also includes .pages.yml, but Finder hides it by default;
+   creating the file using CMS_CONFIG.txt avoids needing to find a hidden file.
+6. Keep CNAME, existing assets and your GitHub Pages publishing settings.
+   Do not upload the ZIP or outer package folder. Do not remove old files
+   during setup. news-data.js is no longer read by these updated pages.
+7. Wait for the Pages deployment to finish in Actions.
+
+CONNECT YOUR EDITOR
+1. Visit https://app.pagescms.org and sign in with your GitHub account.
+2. Install/authorize the Pages CMS GitHub App when prompted.
+3. Select Only select repositories and choose kayode-lab-website.
+4. Open kayode-lab-website and choose main, the branch publishing your site.
+5. You should see News, Lab members, Gallery, Publications and Your profile.
+   If asked to create a configuration, check that .pages.yml was committed to main.
+
+ADDING AN UPDATE
+- Choose a section, add a list item and fill in its labeled fields.
+- News: use a month such as 2026-10, a category, headline and story.
+- Members: add name, role, academic details, graduation and bio. Upload/select
+  a portrait. Display a public email only with permission. Members appear in
+  the order you arrange them in the list.
+- Gallery: add a photo, title, YYYY-MM date, photo description and short story.
+  The coming-soon panel disappears when the first photo is added.
+- Publications: add title, journal, year and link. DOI and lettering style
+  are optional. All entries appear on the homepage, newest year first.
+- Your profile: update your information, photo, LinkedIn or public CV PDF.
+- Click Save in the editor. Saving to main commits the content to GitHub and
+  publishes it through your existing GitHub Pages process after deployment.
+  This setup does not add a draft/approval stage, so save ready-to-publish text.
+- Open https://kayodelabs.com and refresh once deployment has finished.
+  News automatically keeps the newest four on the homepage; Older news shows all.
+
+No GitHub token, password or secret needs to be pasted into the public website.
+The editor is signed in; the website only reads the public content files.
+Avoid putting private information into fields or uploaded documents.
+
+LOCAL REVIEW BEFORE UPLOAD
+Put this unzipped folder on your Desktop. In Terminal:
+cd ~/Desktop/kayode-lab-final-with-editor
+python3 -m http.server 8000
+Open http://localhost:8000. Stop any previous server with Control+C first.
+
+WHAT HAS BEEN CHECKED
+HTML file/anchor links, JavaScript syntax, the four-item news limit, archive
+sorting, existing content, gallery entries, optional member photos, email
+consent, JSON/config parsing and failed-load handling.
+The signed-in Pages CMS connection must be checked after you authorize it.
+
+Documentation: https://pagescms.org/docs/quick-start/

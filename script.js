@@ -57,35 +57,3 @@ if (galleryGrid && galleryDialog) {
   });
 }
 
-// One news list powers the latest four homepage updates and the full archive.
-if (Array.isArray(window.KAYODE_NEWS)) {
-  const updates = [...window.KAYODE_NEWS].sort((a, b) => b.date.localeCompare(a.date));
-  const monthFormatter = new Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric', timeZone: 'UTC' });
-  document.querySelectorAll('[data-news-list]').forEach((list) => {
-    const limit = Number(list.dataset.newsLimit) || updates.length;
-    const fragment = document.createDocumentFragment();
-    updates.slice(0, limit).forEach((update) => {
-      const article = document.createElement('article');
-      article.className = 'news-item';
-      const meta = document.createElement('div');
-      meta.className = 'news-meta';
-      const date = document.createElement('time');
-      date.className = 'news-year';
-      date.dateTime = update.date;
-      date.textContent = monthFormatter.format(new Date(update.date + '-01T00:00:00Z'));
-      const category = document.createElement('span');
-      category.textContent = update.category;
-      meta.append(date, category);
-      const story = document.createElement('div');
-      story.className = 'news-story';
-      const title = document.createElement('h3');
-      title.textContent = update.title;
-      const body = document.createElement('p');
-      body.textContent = update.body;
-      story.append(title, body);
-      article.append(meta, story);
-      fragment.append(article);
-    });
-    list.replaceChildren(fragment);
-  });
-}
