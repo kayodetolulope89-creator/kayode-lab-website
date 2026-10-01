@@ -1,6 +1,6 @@
 :root{--paper:#f6f6f2;--white:#fff;--ink:#18221f;--secondary:#53605a;--line:#d7ddd7;--accent:#9b603d;--gold:#d5b176;--gold-ink:#87662f;--dark:#16231d;scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-padding-top:5rem}
+html{scroll-padding-top:6rem}
 body{margin:0;color:var(--ink);background:var(--paper);font-family:Arial,Helvetica,sans-serif;font-size:1.0625rem;line-height:1.55}
 a{color:inherit}
 button{font:inherit}
@@ -10,7 +10,7 @@ em{font-style:italic}
 .wrap{width:min(100% - 3rem,1240px);margin-inline:auto}
 .skip-link{position:absolute;top:-5rem;left:1rem;padding:.7rem 1rem;background:var(--white);z-index:100}
 .skip-link:focus{top:1rem}
-.site-header{background:var(--white);position:relative;z-index:10}
+.site-header{background:var(--white);position:sticky;top:0;z-index:50;box-shadow:0 1px 0 rgba(24,34,31,.1)}
 .header-inner{min-height:5rem;display:flex;justify-content:space-between;align-items:center;gap:2rem}
 .wordmark{display:inline-flex;align-items:baseline;gap:.35rem;text-decoration:none;white-space:nowrap}
 .wordmark-name,.wordmark-lab{font:600 1.3rem/1.2 Arial,Helvetica,sans-serif;letter-spacing:-.025em;color:var(--ink)}
@@ -164,3 +164,7 @@ h2{font-size:clamp(2.15rem,4vw,3.6rem);line-height:1.15;margin-bottom:0}
 .member-photo-placeholder{display:flex;align-items:center;justify-content:center;color:var(--secondary);font-size:1.6rem;font-weight:600}
 .news-story p,.member-bio,.gallery-story p{white-space:pre-line}
 .paper-masthead.neutral{font-family:Georgia,'Times New Roman',serif;font-size:1.25rem;line-height:1.2}
+
+/* Keep the open mobile menu within the screen below the sticky header. */
+@media(max-width:900px){.primary-nav{max-height:calc(100vh - 5rem);max-height:calc(100dvh - 5rem);overflow-y:auto}}
+@media(max-width:700px){html{scroll-padding-top:5.25rem}.primary-nav{max-height:calc(100vh - 4.5rem);max-height:calc(100dvh - 4.5rem)}}
