@@ -1,0 +1,32 @@
+KAYODE LAB — MOSQUITO ANIMATION UPDATE
+
+1. Unzip this download.
+2. In GitHub, open your website repository and choose Add file > Upload files.
+3. Upload index.html, mosquito-motion.css, and mosquito-motion.js at the repository root.
+4. Add the two files inside assets/ to the repository's existing assets/ folder:
+   hero-leaf.webp and mosquito-flight.webp.
+5. Commit the changes. Wait for your normal GitHub Pages deployment to finish.
+
+Do not delete your existing assets, content folder, or other site files.
+The editor and current news/member/publication JSON files are not replaced.
+The leaf stays still. The separate insect gently hovers with wing movement.
+Pause animation is available, and reduced-motion preferences disable movement.
+The original photograph remains the fallback if an animation asset cannot load.
+
+LOCAL PREVIEW
+Copy these files into your existing local website folder using the same paths.
+Open Terminal in that folder and run:
+python3 -m http.server 8000
+Then open http://localhost:8000 . Stop the server with Ctrl+C.
+
+If your online index.html contains newer manual edits, preserve that file instead
+and add these two lines just after its existing styles.css link in <head>:
+<link rel="stylesheet" href="mosquito-motion.css?v=20261001-flight1">
+<script src="mosquito-motion.js?v=20261001-flight1" defer></script>
+Upload the two motion files and the two assets as above.
+
+ASSET NOTES
+The background was edited with the built-in image generator to remove only the
+stationary insect and preserve the leaf, forest-green setting and photo style.
+The transparent two-frame mosquito sprite was generated for this animation.
+Both generated assets are packaged in lossless WebP format.

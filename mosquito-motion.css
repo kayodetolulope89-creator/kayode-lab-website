@@ -1,0 +1,14 @@
+/* Hero animation only; the shared site design remains in styles.css. */
+.hero.has-mosquito-motion::before{background-image:url('assets/hero-leaf.webp')}
+.hero.has-mosquito-motion .hero-inner{position:relative;z-index:1}
+.mosquito-scene{position:absolute;inset:0 0 0 auto;width:49%;pointer-events:none;z-index:0;overflow:hidden}
+.mosquito-hover{position:absolute;left:15%;top:18%;width:70%;max-width:400px;aspect-ratio:1;animation:mosquito-hover 9s ease-in-out infinite;will-change:transform}
+.mosquito-sprite{display:block;width:100%;height:100%;background:url('assets/mosquito-flight.webp') 0 0/200% 100% no-repeat;animation:mosquito-wings .12s steps(1,end) infinite}
+.mosquito-control{position:absolute;right:1.5rem;bottom:1.5rem;z-index:2;border:1px solid #ffffff70;border-radius:3px;padding:.65rem .85rem;color:#fff;background:#16231de6;font:500 .8rem Arial,sans-serif;cursor:pointer}
+.mosquito-control:hover{background:#243a2e}.mosquito-control:focus-visible{outline:3px solid #dfbf65;outline-offset:4px}
+.hero.mosquito-paused .mosquito-hover,.hero.mosquito-paused .mosquito-sprite{animation-play-state:paused}
+@keyframes mosquito-hover{0%,100%{transform:translate(0,0) rotate(-2deg)}25%{transform:translate(14px,-13px) rotate(1deg)}50%{transform:translate(-8px,-20px) rotate(3deg)}75%{transform:translate(-15px,-5px) rotate(-1deg)}}
+@keyframes mosquito-wings{0%{background-position:0 0}50%{background-position:100% 0}}
+/* A separate image area keeps the insect away from the copy on phones. */
+@media(max-width:700px){.hero.has-mosquito-motion{display:block;min-height:0}.hero.has-mosquito-motion .hero-inner{padding-block:3.5rem 2rem}.hero.has-mosquito-motion::before{display:none}.hero.has-mosquito-motion::after{background:linear-gradient(180deg,#16231d 0%,#16231d 55%,transparent 78%)}.mosquito-scene{position:relative;inset:auto;width:100%;height:260px;z-index:0;background:url('assets/hero-leaf.webp') center 55%/cover no-repeat}.mosquito-hover{width:260px;left:calc(50% - 130px);top:-25px}.mosquito-control{bottom:1rem;right:1rem}}
+@media(prefers-reduced-motion:reduce){.mosquito-hover,.mosquito-sprite{animation:none;will-change:auto}.mosquito-control{display:none}}
