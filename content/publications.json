@@ -2,9 +2,9 @@
   {
     "title": "High-Altitude Plasmodium falciparum and Plasmodium vivax Reservoirs in Ethiopia Are Not Linked to Recent Travel",
     "journal": "Open Forum Infectious Diseases",
-    "short_journal": "Open Forum Infectious Diseases",
+    "short_journal": "OFID",
     "year": 2026,
-    "article_type": "Article",
+    "article_type": "Research article",
     "doi": "10.1093/ofid/ofag247",
     "url": "https://doi.org/10.1093/ofid/ofag247",
     "journal_style": "ofid"
@@ -22,9 +22,9 @@
   {
     "title": "Comparison of three rapid diagnostic tests for Plasmodium falciparum diagnosis in Ghana",
     "journal": "Malaria Journal",
-    "short_journal": "Malaria Journal",
+    "short_journal": "Malar J",
     "year": 2024,
-    "article_type": "Research",
+    "article_type": "Research article",
     "doi": "10.1186/s12936-024-05073-z",
     "url": "https://doi.org/10.1186/s12936-024-05073-z",
     "journal_style": "malaria"
@@ -32,9 +32,9 @@
   {
     "title": "Emergence and spread of two SARS-CoV-2 variants of interest in Nigeria",
     "journal": "Nature Communications",
-    "short_journal": "Nature Communications",
+    "short_journal": "Nat Commun",
     "year": 2023,
-    "article_type": "Article",
+    "article_type": "Research article",
     "doi": "10.1038/s41467-023-36449-5",
     "url": "https://doi.org/10.1038/s41467-023-36449-5",
     "journal_style": "nature"
@@ -62,9 +62,9 @@
   {
     "title": "Polymorphisms in Plasmodium falciparum dihydropteroate synthetase and dihydrofolate reductase genes in Nigerian children with uncomplicated malaria using high-resolution melting technique",
     "journal": "Scientific Reports",
-    "short_journal": "Scientific Reports",
+    "short_journal": "Sci Rep",
     "year": 2021,
-    "article_type": "Article",
+    "article_type": "Research article",
     "doi": "10.1038/s41598-020-80017-6",
     "url": "https://doi.org/10.1038/s41598-020-80017-6",
     "journal_style": "reports"
@@ -72,9 +72,9 @@
   {
     "title": "Polymorphisms in Plasmodium falciparum chloroquine resistance transporter (Pfcrt) and multidrug-resistant gene 1 (Pfmdr-1) in Nigerian children 10 years post-adoption of artemisinin-based combination treatments",
     "journal": "International Journal for Parasitology",
-    "short_journal": "International Journal for Parasitology",
+    "short_journal": "Int J Parasitol",
     "year": 2021,
-    "article_type": "Article",
+    "article_type": "Research article",
     "doi": "10.1016/j.ijpara.2020.10.001",
     "url": "https://doi.org/10.1016/j.ijpara.2020.10.001",
     "journal_style": "ijpara"
@@ -84,7 +84,7 @@
     "journal": "The New England Journal of Medicine",
     "short_journal": "NEJM",
     "year": 2018,
-    "article_type": "Original article",
+    "article_type": "Research article",
     "doi": "10.1056/NEJMoa1804498",
     "url": "https://doi.org/10.1056/NEJMoa1804498",
     "journal_style": "nejm"
@@ -94,7 +94,7 @@
     "journal": "Clinical Infectious Diseases",
     "short_journal": "CID",
     "year": 2026,
-    "article_type": "Clinical Infectious Diseases",
+    "article_type": "Research article",
     "doi": "10.1093/cid/ciag484",
     "url": "https://doi.org/10.1093/cid/ciag484",
     "journal_style": "cid"
