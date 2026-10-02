@@ -6,7 +6,7 @@
     "academic_detail": "Sociology minor",
     "graduation": "December 2029",
     "bio": "Samira studies Biology at James Madison University and is pursuing pre-dental studies with a Sociology minor. She is a Centennial Scholar and a member of Tri-Beta and Relay for Life. Outside of academics, she enjoys playing sports, working out, reading, and traveling.",
-    "photo": "assets/samira-farooque.png",
+    "photo": "/assets/samira-farooque.png",
     "linkedin": "https://www.linkedin.com/in/samira-farooque-207800399",
     "email": "farooqsa@dukes.jmu.edu",
     "show_email": true
@@ -18,9 +18,20 @@
     "academic_detail": "Pre-med",
     "graduation": "2029",
     "bio": "Javier hopes to pursue medicine and provide holistic care to Latino children and families. He is interested in how genetics and engineering research can improve healthcare. Outside of academics, he enjoys going to the gym, running, video editing, and volunteering with the Scholars Latino Initiative.",
-    "photo": "assets/javier-molina.png",
+    "photo": "/assets/javier-molina.png",
     "linkedin": "https://www.linkedin.com/in/haviermolina",
     "email": "molinajc@dukes.jmu.edu",
+    "show_email": true
+  },
+  {
+    "name": "Bailey N. Brock",
+    "role": "Undergraduate researcher",
+    "major": "Biology · Pre-Med",
+    "graduation": "2030",
+    "bio": "Bailey is a certified nursing assistant with additional certifications in Basic Life Support (BLS) and CPR. She has experience working as a CNA in a skilled nursing facility and as a teacher’s aide at a daycare. Outside of academics, Bailey enjoys reading, cooking, and exploring her creative side through art.",
+    "photo": "/assets/Bailey.jpg",
+    "linkedin": "https://www.linkedin.com/in/bailey-brock-97a653429  ",
+    "email": "pzykb7@dukes.jmu.edu",
     "show_email": true
   }
 ]
