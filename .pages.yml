@@ -1,8 +1,331 @@
 media:
   input: assets
   output: /assets
-
 content:
+- name: homepage
+  label: Homepage
+  type: file
+  path: content/homepage.json
+  format: json
+  fields:
+  - name: eyebrow
+    label: Lab and institution line
+    type: string
+  - name: headline
+    label: Main headline
+    type: text
+  - name: subtitle
+    label: Subtitle
+    type: text
+  - name: research_link
+    label: Research button label
+    type: string
+  - name: perspective_label
+    label: Perspective label
+    type: string
+  - name: perspective_heading
+    label: Perspective heading
+    type: text
+  - name: perspective_body
+    label: Perspective description
+    type: text
+  - name: page_title
+    label: Browser title
+    type: string
+  - name: description
+    label: Search engine description
+    type: text
+- name: opportunities
+  label: Opportunities
+  type: file
+  path: content/opportunities.json
+  format: json
+  fields:
+  - name: label
+    label: Section label
+    type: string
+  - name: heading
+    label: Heading
+    type: text
+  - name: students_heading
+    label: Student heading
+    type: string
+  - name: students_body
+    label: Student description
+    type: text
+  - name: collaborators_heading
+    label: Collaborator heading
+    type: string
+  - name: collaborators_body
+    label: Collaborator description
+    type: text
+  - name: contact_label
+    label: Contact button label
+    type: string
+- name: page-headings
+  label: Section and page headings
+  type: file
+  path: content/page-headings.json
+  format: json
+  fields:
+  - name: research_label
+    label: Research label
+    type: string
+  - name: research_heading
+    label: Research heading
+    type: string
+  - name: people_label
+    label: People label
+    type: string
+  - name: people_heading
+    label: People heading
+    type: string
+  - name: news_label
+    label: News label
+    type: string
+  - name: news_heading
+    label: News heading
+    type: string
+  - name: publications_label
+    label: Publications label
+    type: string
+  - name: publications_heading
+    label: Publications heading
+    type: string
+  - name: students_heading
+    label: Students heading
+    type: string
+  - name: older_news
+    label: Older news
+    type: string
+  - name: scholar_label
+    label: Scholar label
+    type: string
+  - name: gallery_title
+    label: Gallery title
+    type: string
+  - name: gallery_label
+    label: Gallery label
+    type: string
+  - name: gallery_heading
+    label: Gallery heading
+    type: string
+  - name: gallery_intro
+    label: Gallery intro
+    type: text
+  - name: gallery_back
+    label: Gallery back
+    type: string
+  - name: gallery_description
+    label: Gallery description
+    type: text
+  - name: archive_title
+    label: Archive title
+    type: string
+  - name: archive_label
+    label: Archive label
+    type: string
+  - name: archive_heading
+    label: Archive heading
+    type: string
+  - name: archive_intro
+    label: Archive intro
+    type: text
+  - name: archive_back
+    label: Archive back
+    type: string
+  - name: archive_description
+    label: Archive description
+    type: text
+  - name: gallery_empty_heading
+    label: Gallery empty heading
+    type: string
+  - name: gallery_empty_body
+    label: Gallery empty body
+    type: string
+- name: research
+  label: Research areas
+  type: file
+  path: content/research.json
+  format: json
+  list: true
+  fields:
+  - name: title
+    label: Research area
+    type: string
+  - name: body
+    label: Description
+    type: text
+  - name: photo
+    label: Image
+    type: image
+  - name: alt
+    label: Image description
+    type: string
+  - name: visible
+    label: Show this area
+    type: boolean
+    default: true
+- name: site-settings
+  label: Site settings and navigation
+  type: file
+  path: content/site-settings.json
+  format: json
+  fields:
+  - name: lab_name
+    label: Lab name
+    type: string
+  - name: address
+    label: Address
+    type: text
+  - name: email
+    label: Email
+    type: string
+  - name: faculty_label
+    label: Faculty label
+    type: string
+  - name: faculty_url
+    label: Faculty url
+    type: string
+  - name: scholar_url
+    label: Scholar url
+    type: string
+  - name: connect_label
+    label: Connect label
+    type: string
+  - name: explore_label
+    label: Explore label
+    type: string
+  - name: copyright
+    label: Copyright
+    type: string
+  - name: image_credit_prefix
+    label: Image credit prefix
+    type: string
+  - name: image_credit_label
+    label: Image credit label
+    type: string
+  - name: image_credit_url
+    label: Image credit url
+    type: string
+  - name: image_credit_suffix
+    label: Image credit suffix
+    type: string
+  - name: navigation
+    label: Navigation links
+    type: object
+    list: true
+    fields:
+    - name: label
+      label: Label
+      type: string
+    - name: url
+      label: Destination URL
+      type: string
+      description: Use index.html#research for a homepage section, gallery.html for
+        a page, or a full https:// link.
+    - name: button
+      label: Display as outlined button
+      type: boolean
+    - name: visible
+      label: Show link
+      type: boolean
+      default: true
+- name: appearance
+  label: Appearance and section visibility
+  type: file
+  path: content/appearance.json
+  format: json
+  fields:
+  - name: paper
+    label: Paper
+    type: string
+    pattern: ^#[0-9a-fA-F]{6}$
+    description: Six-digit hex color. Keep readable contrast between text and backgrounds.
+  - name: white
+    label: White
+    type: string
+    pattern: ^#[0-9a-fA-F]{6}$
+    description: Six-digit hex color. Keep readable contrast between text and backgrounds.
+  - name: ink
+    label: Ink
+    type: string
+    pattern: ^#[0-9a-fA-F]{6}$
+    description: Six-digit hex color. Keep readable contrast between text and backgrounds.
+  - name: secondary
+    label: Secondary
+    type: string
+    pattern: ^#[0-9a-fA-F]{6}$
+    description: Six-digit hex color. Keep readable contrast between text and backgrounds.
+  - name: accent
+    label: Accent
+    type: string
+    pattern: ^#[0-9a-fA-F]{6}$
+    description: Six-digit hex color. Keep readable contrast between text and backgrounds.
+  - name: gold
+    label: Gold
+    type: string
+    pattern: ^#[0-9a-fA-F]{6}$
+    description: Six-digit hex color. Keep readable contrast between text and backgrounds.
+  - name: gold_ink
+    label: Gold ink
+    type: string
+    pattern: ^#[0-9a-fA-F]{6}$
+    description: Six-digit hex color. Keep readable contrast between text and backgrounds.
+  - name: dark
+    label: Dark
+    type: string
+    pattern: ^#[0-9a-fA-F]{6}$
+    description: Six-digit hex color. Keep readable contrast between text and backgrounds.
+  - name: line
+    label: Line
+    type: string
+    pattern: ^#[0-9a-fA-F]{6}$
+    description: Six-digit hex color. Keep readable contrast between text and backgrounds.
+  - name: font_scale
+    label: Font scale
+    type: number
+    description: '100 keeps the current sizes. Supported range: 90–125.'
+  - name: heading_font
+    label: Heading font
+    type: string
+    description: 'Supported: Arial, Georgia, Verdana, or Trebuchet MS.'
+  - name: body_font
+    label: Body font
+    type: string
+    description: 'Supported: Arial, Georgia, Verdana, or Trebuchet MS.'
+  - name: hero_photo
+    label: Hero photo
+    type: image
+  - name: leaf_photo
+    label: Leaf photo
+    type: image
+  - name: mosquito_sprite
+    label: Mosquito sprite
+    type: image
+    description: Two equal square frames side by side, with transparent background.
+      Keep the current sprite unless replacing with a compatible asset.
+  - name: animate_mosquito
+    label: Animate mosquito
+    type: boolean
+  - name: show_perspective
+    label: Show perspective
+    type: boolean
+  - name: show_research
+    label: Show research
+    type: boolean
+  - name: show_people
+    label: Show people
+    type: boolean
+  - name: show_news
+    label: Show news
+    type: boolean
+  - name: show_publications
+    label: Show publications
+    type: boolean
+  - name: show_join
+    label: Show join
+    type: boolean
 - name: news
   label: News
   type: file
@@ -27,7 +350,6 @@ content:
     label: News story
     type: text
     required: true
-
 - name: members
   label: Lab members
   type: file
@@ -72,7 +394,6 @@ content:
     type: boolean
     default: false
     description: Enable only with the member’s consent.
-
 - name: gallery
   label: Gallery
   type: file
@@ -101,7 +422,6 @@ content:
     label: Short story or caption
     type: text
     required: true
-
 - name: publications
   label: Publications
   type: file
@@ -137,8 +457,8 @@ content:
   - name: journal_style
     label: Journal lettering style
     type: string
-    description: 'Optional: nature, science, nejm, malaria, ofid, plos, plosone, reports, or ijpara. Leave blank for neutral lettering.'
-
+    description: 'Optional: nature, science, nejm, malaria, ofid, plos, plosone, reports,
+      or ijpara. Leave blank for neutral lettering.'
 - name: profile
   label: Your profile
   type: file
@@ -164,6 +484,8 @@ content:
   - name: bio
     label: Biography
     type: text
+    description: Your public bio. Separate paragraphs with a blank line. If empty,
+      the approved biography is displayed.
   - name: photo
     label: Headshot
     type: image
