@@ -1,0 +1,59 @@
+{
+  "lab_name": "Kayode Lab",
+  "address": "Department of Biology\nJames Madison University\nHarrisonburg, Virginia",
+  "email": "p9pw4p@jmu.edu",
+  "faculty_label": "JMU faculty profile",
+  "faculty_url": "https://www.jmu.edu/biology/people/current-people/faculty/faculty-kayode.shtml",
+  "scholar_url": "https://scholar.google.com/citations?hl=en&user=4zWHbgIAAAAJ",
+  "connect_label": "Connect",
+  "explore_label": "Explore",
+  "copyright": "© 2026 Kayode Lab",
+  "image_credit_prefix": "Hero photo: ",
+  "image_credit_label": "Erik Karits / Pexels",
+  "image_credit_url": "https://www.pexels.com/photo/a-mosquito-on-a-leaf-10389982/",
+  "image_credit_suffix": " · Research images are illustrative.",
+  "navigation": [
+    {
+      "label": "Research",
+      "url": "index.html#research",
+      "button": false,
+      "visible": true
+    },
+    {
+      "label": "People",
+      "url": "index.html#people",
+      "button": false,
+      "visible": true
+    },
+    {
+      "label": "News",
+      "url": "index.html#news",
+      "button": false,
+      "visible": true
+    },
+    {
+      "label": "Gallery",
+      "url": "gallery.html",
+      "button": false,
+      "visible": true
+    },
+    {
+      "label": "Publications",
+      "url": "https://scholar.google.com/citations?hl=en&user=4zWHbgIAAAAJ",
+      "button": false,
+      "visible": true
+    },
+    {
+      "label": "Contact",
+      "url": "index.html#contact",
+      "button": false,
+      "visible": true
+    },
+    {
+      "label": "Join the lab",
+      "url": "index.html#join",
+      "button": true,
+      "visible": true
+    }
+  ]
+}
