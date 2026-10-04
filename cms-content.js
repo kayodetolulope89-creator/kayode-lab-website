@@ -163,6 +163,7 @@
     });
     list.replaceChildren(fragment);
   };
+  const defaultPIBio = "Dr. Tolulope A. Kayode is an Assistant Professor of Biology at James Madison University and leads Kayode Lab. He is an infectious disease molecular epidemiologist studying malaria and other vector-borne and emerging infections. His research combines molecular biology, genomics, serology, and epidemiology to understand transmission, improve diagnostics, and track drug resistance. He also develops field-ready diagnostic and sequencing approaches to support disease surveillance in resource-limited settings.\n\nHe holds a BSc and MSc in Microbiology and a PhD in Molecular Biology and Genomics. He completed his postdoctoral training in infectious disease epidemiology and genomics at the University of Notre Dame, USA.\n\nDr. Kayode enjoys mentoring students and helping them develop confidence in research. Outside work, he enjoys spending time with his family and participating in community activities.";
   const renderProfile = (item) => {
     if (!item || typeof item !== 'object' || Array.isArray(item) || !item.name) throw new Error('Invalid PI profile');
     const profile = document.querySelector('[data-pi-profile]');
@@ -178,7 +179,17 @@
     if (faculty) links.append(link('JMU faculty profile', faculty));
     if (linkedin) links.append(link('LinkedIn', linkedin));
     if (cv) links.append(link('CV (PDF)', cv));
-    copy.append(node('h3', '', item.name), description, links);
+    const biography = node('div', 'pi-biography');
+    const bioText = typeof item.bio === 'string' && item.bio.trim() ? item.bio.trim() : defaultPIBio;
+    bioText.split(/\n\s*\n/).filter(Boolean).forEach(paragraph => {
+      biography.append(node('p', '', paragraph));
+    });
+    if (!document.getElementById('kayode-pi-biography-styles')) {
+      const style = node('style', '', '[data-pi-profile] .pi-biography{max-width:48rem;margin:1.25rem 0 1.5rem;color:var(--secondary,#53605a)}[data-pi-profile] .pi-biography p{font-size:1.0625rem;line-height:1.7;margin:0 0 1rem}[data-pi-profile] .pi-biography p:last-child{margin-bottom:0}');
+      style.id = 'kayode-pi-biography-styles';
+      document.head.append(style);
+    }
+    copy.append(node('h3', '', item.name), description, biography, links);
     profile.replaceChildren(photo(item.photo, item.name, 'pi-photo'), copy);
   };
   const tasks = [];

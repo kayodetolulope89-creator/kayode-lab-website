@@ -1,0 +1,177 @@
+media:
+  input: assets
+  output: /assets
+content:
+- name: news
+  label: News
+  type: file
+  path: content/news.json
+  format: json
+  list: true
+  fields:
+  - name: date
+    label: Month and year (YYYY-MM)
+    type: string
+    required: true
+    description: 'Example: 2026-10. The website displays October 2026.'
+  - name: category
+    label: Category
+    type: string
+    required: true
+  - name: title
+    label: Headline
+    type: string
+    required: true
+  - name: body
+    label: News story
+    type: text
+    required: true
+- name: members
+  label: Lab members
+  type: file
+  path: content/members.json
+  format: json
+  list: true
+  fields:
+  - name: name
+    label: Full or preferred display name
+    type: string
+    required: true
+  - name: role
+    label: Lab role
+    type: string
+    required: true
+  - name: major
+    label: Major / concentration
+    type: string
+    required: true
+  - name: academic_detail
+    label: Additional academic detail
+    type: string
+  - name: graduation
+    label: Expected graduation
+    type: string
+    required: true
+  - name: bio
+    label: Biography
+    type: text
+    required: true
+  - name: photo
+    label: Profile photo
+    type: image
+  - name: linkedin
+    label: LinkedIn URL
+    type: string
+  - name: email
+    label: JMU email
+    type: string
+  - name: show_email
+    label: Permission to display email publicly
+    type: boolean
+    default: false
+    description: Enable only with the member’s consent.
+- name: gallery
+  label: Gallery
+  type: file
+  path: content/gallery.json
+  format: json
+  list: true
+  fields:
+  - name: date
+    label: Month and year (YYYY-MM)
+    type: string
+    required: true
+    description: 'Example: 2026-10.'
+  - name: title
+    label: Story title
+    type: string
+    required: true
+  - name: photo
+    label: Photograph
+    type: image
+    required: true
+  - name: alt
+    label: Describe the photo for accessibility
+    type: string
+    required: true
+  - name: story
+    label: Short story or caption
+    type: text
+    required: true
+- name: publications
+  label: Publications
+  type: file
+  path: content/publications.json
+  format: json
+  list: true
+  fields:
+  - name: title
+    label: Paper title
+    type: string
+    required: true
+  - name: journal
+    label: Journal name
+    type: string
+    required: true
+  - name: short_journal
+    label: Short journal label
+    type: string
+  - name: year
+    label: Publication year
+    type: number
+    required: true
+  - name: article_type
+    label: Article type
+    type: string
+  - name: doi
+    label: DOI
+    type: string
+  - name: url
+    label: Link to paper
+    type: string
+    required: true
+  - name: journal_style
+    label: Journal lettering style
+    type: string
+    description: 'Optional: nature, science, nejm, malaria, ofid, plos, plosone, reports,
+      or ijpara. Leave blank for neutral lettering.'
+- name: profile
+  label: Your profile
+  type: file
+  path: content/profile.json
+  format: json
+  fields:
+  - name: name
+    label: Name and credentials
+    type: string
+    required: true
+  - name: role
+    label: Lab role
+    type: string
+    required: true
+  - name: position
+    label: Position
+    type: string
+    required: true
+  - name: institution
+    label: Institution
+    type: string
+    required: true
+  - name: bio
+    label: Biography
+    type: text
+    description: Your public bio. Separate paragraphs with a blank line. If empty, the approved biography is displayed.
+  - name: photo
+    label: Headshot
+    type: image
+    required: true
+  - name: linkedin
+    label: LinkedIn URL
+    type: string
+  - name: faculty_url
+    label: Faculty profile URL
+    type: string
+  - name: cv
+    label: Public CV PDF
+    type: file
+    description: Optional. Upload a public version of your CV.
