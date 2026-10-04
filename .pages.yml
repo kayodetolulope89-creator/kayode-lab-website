@@ -1,6 +1,7 @@
 media:
   input: assets
   output: /assets
+
 content:
 - name: news
   label: News
@@ -26,6 +27,7 @@ content:
     label: News story
     type: text
     required: true
+
 - name: members
   label: Lab members
   type: file
@@ -70,6 +72,7 @@ content:
     type: boolean
     default: false
     description: Enable only with the member’s consent.
+
 - name: gallery
   label: Gallery
   type: file
@@ -98,6 +101,7 @@ content:
     label: Short story or caption
     type: text
     required: true
+
 - name: publications
   label: Publications
   type: file
@@ -133,8 +137,8 @@ content:
   - name: journal_style
     label: Journal lettering style
     type: string
-    description: 'Optional: nature, science, nejm, malaria, ofid, plos, plosone, reports,
-      or ijpara. Leave blank for neutral lettering.'
+    description: 'Optional: nature, science, nejm, malaria, ofid, plos, plosone, reports, or ijpara. Leave blank for neutral lettering.'
+
 - name: profile
   label: Your profile
   type: file
@@ -157,6 +161,9 @@ content:
     label: Institution
     type: string
     required: true
+  - name: bio
+    label: Biography
+    type: text
   - name: photo
     label: Headshot
     type: image
