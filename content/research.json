@@ -1,29 +1,29 @@
 [
   {
-    "title": "Malaria detection",
+    "title": "Malaria diagnosis",
     "body": "Malaria can go undetected when parasite levels are low or when parasites lack the genes targeted by common rapid tests. We study these diagnostic gaps and compare testing approaches to improve how infections are identified in patients and communities.",
-    "photo": "assets/malaria-detection.webp",
+    "photo": "/assets/malaria-detection.webp",
     "alt": "Illustrative image of a malaria rapid diagnostic test in a laboratory",
     "visible": true
   },
   {
     "title": "Genomic surveillance",
     "body": "We use molecular and sequencing tools to examine malaria parasite diversity, genes linked to drug resistance, and changes that can affect diagnosis. These data help reveal how parasite populations differ across places and change over time.",
-    "photo": "assets/genomic-surveillance-sequencing.png",
+    "photo": "/assets/genomic-surveillance-sequencing.png",
     "alt": "Illustrative image of a portable DNA sequencer connected to a laptop displaying sequence data and a phylogenetic tree",
     "visible": true
   },
   {
     "title": "Febrile illness",
     "body": "Fever can have many causes, and symptoms alone rarely reveal which pathogen is responsible. We combine diagnostic testing with patient and exposure data to investigate malaria, mosquito-borne viruses, and other infections. Next generation sequencing and metagenomics help us look more broadly when routine tests leave a fever unexplained.",
-    "photo": "assets/febrile-illness.webp",
+    "photo": "/assets/febrile-illness.webp",
     "alt": "Illustrative image of blood samples in a laboratory",
     "visible": true
   },
   {
     "title": "Transmission ecology",
     "body": "Where and when people become infected depends on mosquito exposure, human movement, and local environments. We bring together field observations, epidemiology, serology, environmental data, and molecular evidence to understand how these factors shape transmission across communities and seasons.",
-    "photo": "assets/transmission-ecology.webp",
+    "photo": "/assets/transmission-ecology.webp",
     "alt": "Illustrative image of a mosquito collection container beside wetland vegetation",
     "visible": true
   }
