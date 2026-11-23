@@ -1,5 +1,15 @@
 [
   {
+    "title": "Site-specific distribution of pfhrp2 and pfhrp3 PCR non-amplification profiles in southern Côte d’Ivoire",
+    "journal": "Infection, Genetics and Evolution",
+    "short_journal": "Infect. Genet. Evol.",
+    "year": 2026,
+    "article_type": "Research article",
+    "doi": "10.1016/j.meegid.2026.106049",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1567134826001735",
+    "journal_style": "IGE"
+  },
+  {
     "title": "High-Altitude Plasmodium falciparum and Plasmodium vivax Reservoirs in Ethiopia Are Not Linked to Recent Travel",
     "journal": "Open Forum Infectious Diseases",
     "short_journal": "OFID",
@@ -98,15 +108,5 @@
     "doi": "10.1093/cid/ciag484",
     "url": "https://doi.org/10.1093/cid/ciag484",
     "journal_style": "cid"
-  },
-  {
-    "title": "Site-specific distribution of pfhrp2 and pfhrp3 PCR non-amplification profiles in southern Côte d’Ivoire",
-    "journal": "Infection, Genetics and Evolution",
-    "short_journal": "Infect. Genet. Evol.",
-    "year": 2026,
-    "article_type": "Research article",
-    "doi": "10.1016/j.meegid.2026.106049",
-    "url": "https://www.sciencedirect.com/science/article/pii/S1567134826001735",
-    "journal_style": "IGE"
   }
 ]
